@@ -1,0 +1,7 @@
+const me = {
+  name: "Jonathan Creamer",
+  employer: "Lonely Planet",
+  title: "Senior Engineer",
+  location: "Nashville, TN",
+  technologies: ["JavaScript", "TypeScript", "Node", "React", "C#"]
+};
