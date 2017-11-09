@@ -29,7 +29,10 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   lp: require("../assets/lonelyplanet_bw.png"),
-  family: require("../assets/family.jpg")
+  family: require("../assets/family.jpg"),
+  happyclap: require("../assets/happyclap.gif"),
+  tsunami: require("../assets/tsunami.gif"),
+  beardslap: require("../assets/beardslap.gif"),
 };
 
 preloader(images);
@@ -74,18 +77,40 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>#talkgoals</Heading>
           <List>
-            <ListItem>Talk about installing all the npm things</ListItem>
-            <ListItem>Make some stuff work</ListItem>
-            <ListItem>Talk about it some more</ListItem>
+            <ListItem>From Ruby to Node + React</ListItem>
+            <ListItem>What we learned</ListItem>
+            <ListItem>Why TypeScript</ListItem>
+            <ListItem>Where we're going</ListItem>
           </List>
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
+          Talk about moving from ruby to node, how long it took
+          We settled on Express + React
+          Universal rendering
+        `}>
+          <Heading size={6} textColor="primary" caps>From Ruby to Node + React</Heading>
+          <Image src={images.happyclap} />
+        </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={6} textColor="secondary" caps>Install all the things</Heading>
-          <CodePane
-            lang="bash"
-          >
-          npm i -S typescript express @types/express
-          </CodePane>
+          <Heading size={6} textColor="primary" caps>Realizing your app is unmaintainable</Heading>
+          <Image src={images.tsunami} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>When I realized typescript is just JavaScript</Heading>
+          <Image src={images.beardslap} />
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Travel Agent 
+          </Heading>
+          <Text margin="10px 0 0" textColor="secondary" size={1} fit bold>
+            <a
+              style={{ color: "white" }}
+              href="https://github.com/lonelyplanet/travel-agent"
+            >
+              https://github.com/lonelyplanet/travel-agent
+            </a>
+          </Text>
         </Slide>
       </Deck>
     );
@@ -95,6 +120,11 @@ export default class Presentation extends React.Component {
 /*
  1. Introduction
  2. You should learn about...
+ 1. TypeScript intro
+ 
+  We wanted to build node and react apps. Been through several iterations. 
+
+ 1. @lonelyplanet/travel-agent
 
 Express has long been a tool for building high performance node.js applications.
 caffTypes will ensure you have a stable, and maintainable app with less unit tests, and React rendering makes it easy to share components between the front end and the back end.
@@ -105,4 +135,7 @@ By adding in TypeScript, you can build in some safety measures to protect agains
 Plus, because of the type safety, you can write less tests and more application code.
 Throwing React into the mix gives you the ability to build server side and client side "templates" with the same component model.
 In this talk, we'll cover building a production ready express app with TypesScript and React, working with middleware, and making sure you're ready for launching your app into production.
+
+
+
 */
