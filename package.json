@@ -16,7 +16,8 @@
     "normalize.css": "7.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "spectacle": "^3.0.0"
+    "spectacle": "^3.0.0",
+    "typescript": "^2.6.1"
   },
   "devDependencies": {
     "@types/spectacle": "^1.2.0",

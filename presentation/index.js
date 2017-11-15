@@ -79,15 +79,15 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>From Ruby to Node + React</ListItem>
             <ListItem>What we learned</ListItem>
-            <ListItem>Why TypeScript</ListItem>
-            <ListItem>Where we're going</ListItem>
+            <ListItem>What we did!</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
           Talk about moving from ruby to node, how long it took
           We settled on Express + React
           Universal rendering
-        `}>
+        `}
+        >
           <Heading size={6} textColor="primary" caps>From Ruby to Node + React</Heading>
           <Image src={images.happyclap} />
         </Slide>
@@ -95,10 +95,17 @@ export default class Presentation extends React.Component {
           <Heading size={6} textColor="primary" caps>Realizing your app is unmaintainable</Heading>
           <Image src={images.tsunami} />
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Heading size={1} textColor="primary" caps>Working with TypeScript</Heading>
+          <Image src={images.beardslap} />
+        </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={6} textColor="primary" caps>When I realized typescript is just JavaScript</Heading>
           <Image src={images.beardslap} />
         </Slide>
+        {/*
+
+        */}
         <Slide transition={["zoom"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Travel Agent 
@@ -127,7 +134,7 @@ export default class Presentation extends React.Component {
  1. @lonelyplanet/travel-agent
 
 Express has long been a tool for building high performance node.js applications.
-caffTypes will ensure you have a stable, and maintainable app with less unit tests, and React rendering makes it easy to share components between the front end and the back end.
+Types will ensure you have a stable, and maintainable app with less unit tests, and React rendering makes it easy to share components between the front end and the back end.
 
 Building a node.js app with express is easy.
 However, once you get ready to ship a larger scale express app to production, it can get a bit more tedious.
