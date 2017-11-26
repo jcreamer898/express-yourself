@@ -33,6 +33,7 @@ const images = {
   happyclap: require("../assets/happyclap.gif"),
   tsunami: require("../assets/tsunami.gif"),
   beardslap: require("../assets/beardslap.gif"),
+  applause: require("../assets/applause.gif"),
 };
 
 preloader(images);
@@ -83,23 +84,29 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
-          Talk about moving from ruby to node, how long it took
-          We settled on Express + React
-          Universal rendering
+          * Talk about moving from ruby to node
+          * how long it took
+          * We settled on Express + React
+          * Universal rendering
         `}
         >
           <Heading size={6} textColor="primary" caps>From Ruby to Node + React</Heading>
           <Image src={images.happyclap} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
+        * Dependencies across applications
+        * Big react components
+        * Dealing with API issues
+        `}
+        >
           <Heading size={6} textColor="primary" caps>Realizing your app is unmaintainable</Heading>
           <Image src={images.tsunami} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
-          <Heading size={1} textColor="primary" caps>Working with TypeScript</Heading>
-          <Image src={images.beardslap} />
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
+        * Can use TypeScript instead of Babel
+        * // @tscheck
+        `}
+        >
           <Heading size={6} textColor="primary" caps>When I realized typescript is just JavaScript</Heading>
           <Image src={images.beardslap} />
         </Slide>
@@ -108,7 +115,7 @@ export default class Presentation extends React.Component {
         */}
         <Slide transition={["zoom"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            Travel Agent 
+            Travel Agent
           </Heading>
           <Text margin="10px 0 0" textColor="secondary" size={1} fit bold>
             <a
@@ -117,6 +124,13 @@ export default class Presentation extends React.Component {
             >
               https://github.com/lonelyplanet/travel-agent
             </a>
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>Thanks!</Heading>
+          <Image src={images.applause} />
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Follow me on the tweets <a href="https://twitter.com/jcreamer898">@jcreamer898</a>
           </Text>
         </Slide>
       </Deck>
@@ -128,8 +142,8 @@ export default class Presentation extends React.Component {
  1. Introduction
  2. You should learn about...
  1. TypeScript intro
- 
-  We wanted to build node and react apps. Been through several iterations. 
+
+  We wanted to build node and react apps. Been through several iterations.
 
  1. @lonelyplanet/travel-agent
 

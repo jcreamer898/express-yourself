@@ -7,10 +7,12 @@ Run through ...
 
 app/index
 modules/controllers
+modules/home
+* show hot loading
+config
 
-
-### 3 main parts to an express app
-
-1. Start script
-1. Server script
-1. Routes
+travel-agent/start
+travel-agent/server
+travel-agent/middleware
+travel-agent/controllers
+travel-agent/view

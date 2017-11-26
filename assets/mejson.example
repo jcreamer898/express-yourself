@@ -3,5 +3,6 @@ const me = {
   employer: "Lonely Planet",
   title: "Senior Engineer",
   location: "Nashville, TN",
-  technologies: ["JavaScript", "TypeScript", "Node", "React", "C#"]
+  technologies: ["JavaScript", "TypeScript", "Node", "React", "C#"],
+  tweets: "@jcreamer898"
 };
