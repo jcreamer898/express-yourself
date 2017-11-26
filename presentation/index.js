@@ -14,6 +14,7 @@ import {
   Text,
   Image,
   CodePane,
+  Link,
 } from "spectacle";
 
 // Import image preloader util
@@ -110,9 +111,90 @@ export default class Presentation extends React.Component {
           <Heading size={6} textColor="primary" caps>When I realized typescript is just JavaScript</Heading>
           <Image src={images.beardslap} />
         </Slide>
-        {/*
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={3} textColor="primary" caps>
+            <Link
+              textColor="primary"
+              href="https://blog.acolyer.org/2017/09/19/to-type-or-not-to-type-quantifying-detectable-bugs-in-javascript/">
+              15% of bugs *could* be caught...
+            </Link>
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>TypeChecks FTW</Heading>
+          <CodePane
+            source={`
+            function showPrice(price) {
+              return price.toFixed();
+            }
 
-        */}
+            //...
+
+            showPrice("4.44");
+            `}
+            lang="javascript"
+          />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Image
+            src="http://d.pr/i/APfHY4+"
+          />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>TypeChecks FTW</Heading>
+          <CodePane
+            source={`
+            function showPrice(price: number) {
+              return price.toFixed();
+            }
+
+            //...
+
+            showPrice("4.44"); // Argument of type '"4.44"' is not assignable to parameter of type 'number'.
+            `}
+            lang="javascript"
+          />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Image
+            src="http://d.pr/i/J6PTyP+"
+          />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>Spot the mistake...</Heading>
+          <CodePane
+            source={require("raw-loader!../assets/jsclass.example")}
+            lang="javascript"
+          />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>Types to the rescue!</Heading>
+          <CodePane
+            source={require("raw-loader!../assets/tsclass.example")}
+            lang="javascript"
+          />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>😎</Heading>
+          <Image
+            src="http://d.pr/i/9StLeE+"
+          />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>ts-check to the rescue!</Heading>
+          <CodePane
+            source={require("raw-loader!../assets/tscheck.example")}
+            lang="javascript"
+          />
+        </Slide>
+
         <Slide transition={["zoom"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Travel Agent

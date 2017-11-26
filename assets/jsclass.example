@@ -1,0 +1,15 @@
+import * as React from "react";
+
+class LunchTime extends React.Component {
+  renderRestaurant(restaurant) {
+    return (<div>{restaurant}</div>)
+  }
+
+  render() {
+    return (
+      <div>
+        {this.renderRestaurant(this.props.restaraunt)}
+      </div>
+    );
+  }
+}
