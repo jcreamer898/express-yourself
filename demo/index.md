@@ -9,6 +9,7 @@ app/index
 modules/controllers
 modules/home
 * show hot loading
+services
 config
 
 travel-agent/start
