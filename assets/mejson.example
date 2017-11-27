@@ -4,5 +4,6 @@ const me = {
   title: "Senior Engineer",
   location: "Nashville, TN",
   technologies: ["JavaScript", "TypeScript", "Node", "React", "C#"],
-  tweets: "@jcreamer898"
+  tweets: "@jcreamer898",
+  bestFriend: "@nickfranciosi",
 };

@@ -137,6 +137,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>#fail</Heading>
           <Image
             src="http://d.pr/i/APfHY4+"
           />
@@ -159,6 +160,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>#blessed</Heading>
           <Image
             src="http://d.pr/i/J6PTyP+"
           />
@@ -228,6 +230,9 @@ export default class Presentation extends React.Component {
           <Image src={images.applause} />
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
             Follow me on the tweets <a href="https://twitter.com/jcreamer898">@jcreamer898</a>
+          </Text>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Build cool stuff too... <a href="https://www.lonelyplanet.com/jobs">https://www.lonelyplanet.com/jobs</a>
           </Text>
         </Slide>
       </Deck>
