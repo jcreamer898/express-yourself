@@ -199,7 +199,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Travel Agent
           </Heading>
-          <Text margin="10px 0 0" textColor="secondary" size={1} fit bold>
+          <Text margin="10px 0 0" textColor="secondary" size={3} fit bold>
             <a
               style={{ color: "white" }}
               href="https://github.com/lonelyplanet/travel-agent"
@@ -208,6 +208,21 @@ export default class Presentation extends React.Component {
             </a>
           </Text>
         </Slide>
+
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Backpack UI
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
+            <a
+              style={{ color: "white" }}
+              href="https://github.com/lonelyplanet/backpack-ui"
+            >
+              https://github.com/lonelyplanet/backpack-ui
+            </a>
+          </Text>
+        </Slide>
+
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={6} textColor="primary" caps>Thanks!</Heading>
           <Image src={images.applause} />
