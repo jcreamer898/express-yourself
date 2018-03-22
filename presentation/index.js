@@ -79,33 +79,46 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>#talkgoals</Heading>
           <List>
-            <ListItem>From Ruby to Node + React</ListItem>
-            <ListItem>What we learned</ListItem>
+            <ListItem>Background</ListItem>
+            <ListItem>TypeScript Benefits</ListItem>
             <ListItem>What we did!</ListItem>
           </List>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
-          * Talk about moving from ruby to node
-          * how long it took
-          * We settled on Express + React
-          * Universal rendering
-        `}
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`<ul>
+          <li>Talk about moving from ruby to node</li>
+          <li>Love JS</li>
+        </ul>`}
         >
           <Heading size={6} textColor="primary" caps>From Ruby to Node + React</Heading>
           <Image src={images.happyclap} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
-        * Dependencies across applications
-        * Big react components
-        * Dealing with API issues
-        `}
-        >
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <List>
+            <Heading size={6} textColor="primary" caps>Moving to node</Heading>
+            <ListItem>Lots of page views, SEO, etc</ListItem>
+            <ListItem>V-Dom, RenderToString</ListItem>
+            <ListItem>Universal rendering</ListItem>
+            <ListItem>We settled on Express + React</ListItem>
+            <ListItem>Built many micro web apps</ListItem>
+            <ListItem>Started to see some issues...</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={6} textColor="primary" caps>Realizing your app is unmaintainable</Heading>
           <Image src={images.tsunami} />
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <List>
+            <Heading size={6} textColor="primary" caps>Some issues we ran in to</Heading>
+            <ListItem>Dependencies across applications</ListItem>
+            <ListItem>Big react components</ListItem>
+            <ListItem>Dealing with API issues</ListItem>
+            <ListItem>Wasn't in to TS at first</ListItem>
+          </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={`
-        * Can use TypeScript instead of Babel
-        * // @tscheck
+        <li>Can use TypeScript instead of Babel</li>
+        <li>// @tscheck</li>
         `}
         >
           <Heading size={6} textColor="primary" caps>When I realized typescript is just JavaScript</Heading>
@@ -223,6 +236,14 @@ export default class Presentation extends React.Component {
               https://github.com/lonelyplanet/backpack-ui
             </a>
           </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <List>
+            <Heading size={6} textColor="primary" caps>Other things</Heading>
+            <ListItem><a href="https://github.com/DefinitelyTyped/DefinitelyTyped/">DefinitelyTyped</a></ListItem>
+            <ListItem><a href="https://palantir.github.io/tslint/">tslint</a></ListItem>
+            <ListItem><a href="https://github.com/basarat/typescript-book">basarat/typescript-book</a></ListItem>
+          </List>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
